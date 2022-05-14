@@ -3,6 +3,7 @@ package com.tardigrada.eggcounter
 class EggCounterFunctions {
     // variables
     private var eggs: Int = 0
+    private var eggCounterString = ""
 
     // function adds +1 egg to the eggs
     fun addEgg(): Int {
@@ -16,7 +17,6 @@ class EggCounterFunctions {
 
     // function to create String to show how many eggs we have
     fun eggCounterString(eggs: Int): String {
-        var eggCounterString = ""
         if (eggs == 1) {
             eggCounterString = "You have $eggs egg"
         } else if (eggs > 1) {
