@@ -10,6 +10,16 @@ class EggCounterFunctions {
         return eggs++
     }
 
+    // function takes 1 egg from the eggs
+    fun takeEgg(): Int {
+        if (eggs <= 0) {
+            eggs = 0
+        } else {
+            eggs--
+        }
+        return eggs
+    }
+
     // function to show the number of eggs
     fun eggs(): Int {
         return eggs

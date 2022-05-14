@@ -11,6 +11,11 @@ class EggCounterViewModel(application: Application) : AndroidViewModel(applicati
         return eggCounterFunctions.addEgg()
     }
 
+    // function takes 1 egg from the eggs
+    fun takeEgg(): Int {
+        return eggCounterFunctions.takeEgg()
+    }
+
     // function to show the number of eggs
     fun eggs(): Int {
         return eggCounterFunctions.eggs()
